@@ -34,6 +34,9 @@
  --font-weight-regular: 400;
  --font-weight-bold: 600;
 
+ /* Padding */
+ --section-padding: 160px;
+
 }
 /* DEFAULT */
 
@@ -86,7 +89,7 @@ p{
 header{
   background: url(../images/bg-header-desktop.png)no-repeat;
   background-size: contain ;
-  padding: 130px 160px 70px ;
+  padding: 130px var(--section-padding) 70px ;
 }
 header>img{
   display: block;
@@ -177,7 +180,7 @@ header>p{
 /* section_access */
 
 .access{
-  padding: 70px 160px 0;
+  padding: 70px var(--section-padding) 0;
 }
 .access p {
   max-width: 690px;
@@ -193,7 +196,7 @@ header>p{
 /* section_tools */
 
 .tools{
-  padding: 70px 160px;
+  padding: 70px var(--section-padding);
 }
 
 .tools > p{
@@ -231,7 +234,7 @@ header>p{
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   grid-gap: 80px 100px;
-  padding: 80px 160px ;
+  padding: 80px var(--section-padding) ;
 }
 .users > img {
   place-self: center ;
@@ -240,7 +243,7 @@ header>p{
 /* section_download */
 
 .download{
-  padding: 70px 160px 150px;
+  padding: 70px var(--section-padding) 150px;
 
 }
 .download > p{
@@ -253,7 +256,7 @@ header>p{
 /* footer */
 
 footer{
-  padding:45px 160px ;
+  padding:45px var(--section-padding) ;
   background-color: hsl(220 , 18% ,97%);
   display: grid;
   grid-template-columns: auto auto auto;
@@ -291,11 +294,57 @@ footer .links a:hover{
 }
 
 /* mobile */
-@media screen and (max-width: px){
+@media screen and (max-width: 375px) {
+  :root {
+    --font-size-h1: 28px;
+    --font-size-h1: 24px;
+    --font-size-large: 14px;
+    --font-size: 14px;
 
-  
+    --section-padding: 25px;
+  }
 
+  header {
+    background: url(../images/bg-header-mobile.png) no-repeat;
+    background-size: 100%;
+    padding: 100px 20px 50px;
+  }
+
+  .buttons > a {
+    width: 100%;
+  }
+
+  .about_snippet_img img {
+    width: 100%;
+  }
+
+  .about_snippet_cards_card p {
+    line-height: 1.4;
+  }
+
+  .access p {
+    margin-bottom: 40px;
+  }
+
+  .tools_cards {
+    grid-template-columns: 1fr;
+    grid-gap: 50px 20px;
+  }
+
+  .users {
+    grid-gap: 50px 80px;
+    overflow: scroll;
+  }
+
+  .links {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
 }
+
+
+
+
 
 
 
