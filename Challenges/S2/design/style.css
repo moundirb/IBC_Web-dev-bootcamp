@@ -20,7 +20,6 @@ box-sizing: border-box;
 
 }
 
-
 body {
 
   font-family: var(--font-family);
@@ -112,3 +111,5 @@ li:active  {
   transition:  0.2s ease-in-out;
 
 }
+
+/* responisve and some enhacemnt in code */
