@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 :root{
   
   /* colors */
@@ -108,8 +107,6 @@ header>p{
   text-align: center;
 }
 
-/* border  white when i wrote  a element */
-
 .buttons > a   { 
   font-size: var(--font-size);
   letter-spacing: 1px;
@@ -130,7 +127,7 @@ header>p{
   border-bottom: 4px solid var(--primary-Border-Blue);
  box-shadow: 0 10px 30px -5px var(--primary-Shadow-Blue);
 }
-.buttons  a:active{
+.buttons  a:hover{
   opacity: 0.9 ;
 }
 
@@ -266,31 +263,29 @@ footer >img{
   width: 50px;
 }
 
-footer .links{
+.links{
   max-width: 500px;
   display:grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px 70px;
 }
-footer .links a {
+.links a {
   font-size: var(--font-size);
   font-weight: var(--font-weight-bold);
   color:var(--neutral-Dark-Grayish-Blue)
 }
 
-footer .links a:hover{
+.links a:hover{
   color: var(--primary-Strong-Cyan);
 }
 .socials{
   place-self: center flex-end;
 }
 .socials a{
-  font-size: 27px;
-  color: var(--neutral-Dark-Grayish-Blue);
-}
-.socials a:not(:last-child){
   margin-right: 20px;
-
+}
+.socials a svg:hover{
+  fill: var(--primary-Strong-Cyan);
 }
 
 /* mobile */
