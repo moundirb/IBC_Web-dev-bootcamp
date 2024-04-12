@@ -37,10 +37,12 @@ body {
   background: var(--neutral-dark-grayish-blue);
   text-align: center;
   margin: 0 auto;
-  padding: 30px;
+  padding: 50px;
   max-width: 400px;
   border-radius: 13px;
   position:relative;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+
 }
 .advice-tag{
   color: var(--primary-neon-green);
@@ -60,7 +62,7 @@ body {
   word-wrap:break-word;
 
 }
-.advice-split{
+.advice-split *{
   display:block;
   width: 90%;
   margin: 0 auto;
@@ -80,16 +82,18 @@ body {
 
 }
 #advice-btn:hover {
-  box-shadow: 0 0 20px 12px hsla(150, 100%, 66%,0.5); /* Adjust the spread radius (10px) and spread distance (5px) as needed */
+  box-shadow: 0 0 20px 12px hsla(150, 100%, 66%,0.5);
   transition: all .4s ease-in-out;
+
 }
 
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   .card {
-    padding:15px;
+    padding:50px 15px;
     margin: 0 12px;
   }
+
 }
 
 

@@ -11,8 +11,12 @@
   <div class="card">
     <p class="advice-tag">Advice #<span id="advice-id"></span></p>
     <p id="advice-text"></p>
-    <img class="advice-split" src="./images/pattern-divider-desktop.svg" alt="">
-    <button id="advice-btn">
+    <picture class="advice-split">
+      <source media="(max-width: 600px)" srcset="./images/pattern-divider-mobile.svg">
+      <source media="(min-width: 601px)" srcset="./images/pattern-divider-desktop.svg">
+      <img src="./images/pattern-divider-desktop.svg" alt="forAll">
+    </picture>
+        <button id="advice-btn">
       <img src="./images/icon-dice.svg" alt="">
     </button>
   </div>
