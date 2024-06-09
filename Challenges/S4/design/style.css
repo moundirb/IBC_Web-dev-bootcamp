@@ -402,6 +402,8 @@ max-width: 100%;  }
 .links {
   text-align: center;
   grid-template-columns: 1fr;
+  grid-template-areas: 
+  "faqs" "contact" "privacy" "press" "install";/* Define specific layout areas */  
 }
 .socials{  
   display :grid;
